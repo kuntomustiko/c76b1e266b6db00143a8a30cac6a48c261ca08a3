@@ -1,0 +1,288 @@
+.card {
+  width: 340px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0px rgba(10, 31, 68, 0.1);
+  margin-bottom: 12px;
+}
+
+.card-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 340px;
+  height: 220px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 16px;
+}
+
+.card-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-rating__text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 4px;
+  color: #6e7679;
+}
+
+.card-title {
+  font-size: 14px;
+  margin: 0;
+  color: #424749;
+}
+
+.card-subtitle {
+  text-align: left;
+  color: #6e7679;
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-contentbawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.card-price {
+  font-size: 14px;
+  color: #424749;
+}
+
+.isiBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isiBtn span {
+  margin-top: 2px;
+  margin-right: 2px;
+}
+
+.btn-add {
+  color: white;
+  background-color: #f9423a;
+  border-radius: 5px;
+  border: 0;
+  padding: 8px;
+  text-transform: uppercase;
+  width: 80px;
+  height: 35px;
+}
+
+.btnEatMenu {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.btnEatMenu .active {
+  width: 50%;
+  height: 30px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #424749;
+  font-weight: bold;
+  color: white;
+}
+
+.btnEatMenu .passive {
+  width: 50%;
+  height: 30px;
+  border: 1px solid #6e7679;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  font-weight: bold;
+  color: #6e7679;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.navbar-text {
+  margin-left: 16px;
+}
+
+.navbar-text p {
+  margin: 0;
+  text-align: left;
+  color: #6e7679;
+  text-transform: uppercase;
+  font-size: 8px;
+}
+
+.navbar-text__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-text__location h4 {
+  margin: 0;
+  color: #424749;
+  font-size: 16px;
+}
+
+.stickybottom {
+  background-color: #a23530;
+  color: white;
+  padding: 8px;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  width: auto;
+  margin: 0;
+  z-index: 50;
+  left: 0;
+  bottom: 0;
+}
+
+.stickybottom-left {
+  text-align: left;
+}
+
+.stickybottom-left p {
+  margin: 0;
+}
+
+.stickybottom-left__top {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.stickybottom-left__bottom {
+  font-size: 14px;
+  color: #f1f1f2;
+  letter-spacing: 0.2px;
+}
+
+.modallocation {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  width: 375px;
+  height: 100vh;
+}
+
+.modallocation .modallocation-samar {
+  background-color: black;
+  opacity: 0.2;
+  height: 140px;
+  width: 100%;
+}
+
+.modallocation-container {
+  background-color: white;
+  z-index: 100;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 8px;
+}
+
+.modallocation-container .icon-close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.modallocation-container h2 {
+  text-align: left;
+  font-size: 20px;
+}
+
+.modallocation-container__isi form {
+  border: 1px solid #6e7679;
+  padding: 4px;
+  text-align: left;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.modallocation-container__isi form .iconlocation {
+  margin-left: 5px;
+}
+
+.modallocation-container__isi form .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modallocation-container__isi form .input-container .input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+.listlocation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4px;
+  overflow-y: scroll;
+  height: 350px;
+}
+
+.listlocation-container {
+  display: flex;
+  justify-content: start;
+  align-items: left;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  margin-top: m-3;
+}
+
+.listlocation-container__isi h3 {
+  margin: 0;
+  text-align: left;
+  color: #424749;
+  font-size: 16px;
+}
+
+.listlocation-container__isi p {
+  margin: 0;
+  color: #6e7679;
+  font-size: 12px;
+}
+
+.listlocation-container__isi .garis {
+  width: 100%;
+  border-bottom: 1px solid #e2e3e3;
+  margin-top: 8px;
+}
+/*# sourceMappingURL=main.css.map */

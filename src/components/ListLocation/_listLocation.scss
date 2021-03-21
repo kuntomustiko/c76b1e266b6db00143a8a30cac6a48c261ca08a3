@@ -1,0 +1,40 @@
+.listlocation {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $p-1;
+  overflow-y: scroll;
+  height: 350px;
+
+  &-container {
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    flex-direction: row;
+    width: 100%;
+    margin-left: $m-3;
+    margin-bottom: $m-3;
+    margin-top: m-3;
+
+    &__isi {
+      h3 {
+        margin: 0;
+        text-align: left;
+        color: $mainBlack;
+        font-size: $fs-4;
+      }
+      p {
+        margin: 0;
+        color: $mainGray;
+        font-size: $fs-2;
+      }
+
+      .garis {
+        width: 100%;
+        border-bottom: 1px solid $background;
+        margin-top: $m-2;
+      }
+    }
+  }
+}

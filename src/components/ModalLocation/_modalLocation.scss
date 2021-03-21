@@ -1,0 +1,58 @@
+.modallocation {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  width: 375px;
+  height: 100vh;
+
+  .modallocation-samar {
+    background-color: black;
+    opacity: 0.2;
+    height: 140px;
+    width: 100%;
+  }
+  &-container {
+    background-color: white;
+    z-index: 100;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: $p-2;
+
+    .icon-close {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: $fs-5;
+    }
+    &__isi {
+      form {
+        border: 1px solid $mainGray;
+        padding: $p-1;
+        text-align: left;
+        border-radius: 3px;
+        margin-bottom: $m-3;
+
+        .iconlocation {
+          margin-left: 5px;
+        }
+        .input-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border: none;
+            font-size: $fs-5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.card {
+  width: 340px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: $shadow;
+  margin-bottom: 12px;
+
+  &-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 340px;
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: $m-3;
+  }
+
+  &-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-size: $fs-3;
+      font-weight: bold;
+      margin-right: $m-1;
+      color: $mainGray;
+    }
+  }
+
+  &-title {
+    font-size: $fs-3;
+    margin: 0;
+    color: $mainBlack;
+  }
+
+  &-subtitle {
+    text-align: left;
+    color: $mainGray;
+    font-size: $fs-2;
+    margin: 0;
+  }
+
+  &-contentbawah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $m-2;
+    width: 100%;
+  }
+
+  &-price {
+    font-size: $fs-3;
+    color: $mainBlack;
+  }
+}
+
+.isiBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-top: 2px;
+    margin-right: 2px;
+  }
+}
